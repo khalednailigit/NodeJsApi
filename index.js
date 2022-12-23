@@ -42,6 +42,10 @@ app.use(errors.errorHandler);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // listen for requests
+const hostname = 'http://localhost'
+const port = process.env.port || 5000;
 app.listen(process.env.port || 5000, function () {
+  console.log('http://localhost:5000/api-docs/#/Products/get_api_products');
+  console.log("Listening on port 5000");
   console.log("Ready to Go!" );
 });

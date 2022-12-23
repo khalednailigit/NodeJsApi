@@ -14,7 +14,7 @@ router.get("/products/:id", productsController.findOne);
 // Update a Product with id
 router.put("/products/:id", productsController.update);
 
-// // Delete a Product with id
+// Delete a Product with id
 router.delete("/products/:id", productsController.delete);
 
 module.exports = router;
